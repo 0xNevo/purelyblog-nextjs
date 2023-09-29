@@ -3,7 +3,7 @@
 import links from "../../constants/links";
 import Link from "next/link";
 import AvatarDropDown from "../user/AvatarDropDown";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 type Link = {
   label: string;
@@ -12,7 +12,6 @@ type Link = {
 };
 
 const LeftSideBar = () => {
-  const router = useRouter();
   const pathname = usePathname();
 
   return (
