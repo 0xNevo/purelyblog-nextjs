@@ -1,6 +1,5 @@
 import UserEditForm from "@/components/user/UserEditForm";
 import { getUser } from "@/lib/actions/user.actions";
-import { useSession } from "next-auth/react";
 import toast from "react-hot-toast";
 
 const Page = async ({ params }: { params: { username: string } }) => {

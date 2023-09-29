@@ -4,7 +4,6 @@ import { getUsers } from "@/lib/actions/user.actions";
 import { getServerSession } from "next-auth";
 
 const Page = async ({
-  params,
   searchParams,
 }: {
   params: { slug: string };
