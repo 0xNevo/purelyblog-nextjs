@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-size: 18px;
+  background-color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.text-light {
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #fff;
+}
+
+.customButtonBg {
+  box-shadow: 0 0 0 100vmax inset rgb(0 0 0 / var(--o, 0%));
+}
+
+.customButtonBg:hover {
+  --o: 10%;
+}
+
+@layer base {
+  .text-blue {
+    @apply text-xl text-sky-600;
+  }
+  .text-darkgray {
+    @apply text-xl text-gray-700;
+  }
+  .text-primary {
+    @apply text-cyan-700;
+  }
+}
