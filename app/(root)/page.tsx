@@ -1,6 +1,5 @@
 import PostCard from "@/components/posts/PostCard";
 import { getPosts } from "@/lib/actions/posts.actions";
-import toast from "react-hot-toast";
 
 export default async function Home() {
   const { posts, error } = await getPosts();
