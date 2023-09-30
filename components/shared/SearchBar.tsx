@@ -1,7 +1,7 @@
 "use client";
-import { Label, TextInput } from "flowbite-react";
+import { TextInput } from "flowbite-react";
 import { useRouter } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 
 const SearchBar = ({ searchType }: { searchType: string }) => {

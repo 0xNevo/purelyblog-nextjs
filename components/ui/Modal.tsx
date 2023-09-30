@@ -1,7 +1,6 @@
 "use client";
 
-import { Button, Modal } from "flowbite-react";
-import { useState } from "react";
+import { Modal } from "flowbite-react";
 
 type Props = {
   openModal: boolean;
